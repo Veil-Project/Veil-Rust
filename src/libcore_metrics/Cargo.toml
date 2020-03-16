@@ -1,0 +1,15 @@
+[package]
+authors = ["The Veil Link Server Developers"]
+name = "veil_core_metrics"
+description = "Veil blockchain metrics"
+homepage = "..."
+repository = "..."
+keywords = ["bitcoin", "ethereum", "veil", "cryptocurrency"]
+license = "BSD-3-Clause"
+version = "0.1.0"
+publish = false
+edition = "2018"
+
+[dependencies]
+prometheus = "0.7"
+veil_core_rpc_client = { path = "../libcore_rpc_client" }

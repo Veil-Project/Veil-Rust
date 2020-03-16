@@ -1,0 +1,30 @@
+[package]
+authors = ["The Veil Rust Contributors"]
+name = "veil_core_rpc"
+version = "0.0.0"
+publish = false
+edition = "2018"
+
+# [lib]
+# name = "veil_core_rpc_client"
+# path = "lib.rs"
+# test = false
+# bench = false
+
+# [[test]]
+# name = "veil_clienttests"
+# path = "../libveil_client/tests/lib.rs"
+
+# [[bench]]
+# name = "veil_rpcbenches"
+# path = "../libveil_client/benches/lib.rs"
+
+[dependencies]
+base64 = "~0.10"
+dirs = "~2.0.2"
+quiche = "~0.2.0"
+serde_json = "~1.0"
+serde = { version = "~1.0", features = ["derive"] }
+mimir_net = { path = "../libnet" }
+veil = { path = "../libveil" }
+# mimir_net = { path = "../libnet", git = "https://github.com/Veil-Project/Veil-Rust" }

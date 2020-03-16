@@ -1,0 +1,11 @@
+# OS
+.DS_STORE
+
+# Rust
+target
+**/*.rs.bk
+
+# Editor / IDE
+.idea
+.vscode
+

@@ -1,0 +1,22 @@
+[package]
+name = "secp256k1-veil-sys"
+version = "0.1.0"
+authors = ["Mimir <mimir@runeledger.org>"]
+edition = "2018"
+build = "build.rs"
+links = "secp256k1-veil-sys"
+
+[build-dependencies]
+bindgen = "0.51.1"
+cc = "1.0.47"
+
+[features]
+default = ["ecdh", "generator", "mlsag", "rangeproof", "recovery", "schnorr", "surjectionproof", "whitelist"]
+ecdh = []
+generator = []
+mlsag = []
+rangeproof = []
+recovery = []
+schnorr = []
+surjectionproof = []
+whitelist = []

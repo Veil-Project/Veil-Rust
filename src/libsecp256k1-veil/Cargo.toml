@@ -1,0 +1,17 @@
+[package]
+name = "libsecp256k1-veil"
+version = "0.1.0"
+authors = ["Mimir <mimir@runeledger.org>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.7.2"
+secp256k1-veil-sys = { path = "../libsecp256k1-veil-sys" }
+
+[build-dependencies]
+bindgen = "0.51.1"
+cc = "1.0.46"
+
+[features]
+default = ["rand_os"]
+rand_os = []

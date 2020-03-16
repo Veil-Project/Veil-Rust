@@ -1,0 +1,22 @@
+[workspace]
+
+members = [
+    # "src/libcore_metrics",
+    "src/libcore_rpc_client",
+    "src/libcrypto",
+    # "src/liblink_metrics",
+    # "src/liblink_client",
+    "src/liblink_server",
+    "src/libnet",
+    "src/libsecp256k1-veil",
+    "src/libsecp256k1-veil-sys",
+    "src/libveil",
+]
+
+[profile.dev]
+debug = true
+debug-assertions = true
+
+[profile.test]
+debug = false
+debug-assertions = false

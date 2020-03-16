@@ -1,0 +1,9 @@
+[package]
+authors = ["The Veil Rust Contributors"]
+name = "crypto"
+version = "0.0.0"
+publish = false
+edition = "2018"
+
+[dependencies]
+snow = "0.6.1"
